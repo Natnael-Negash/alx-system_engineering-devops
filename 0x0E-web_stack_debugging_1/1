@@ -1,0 +1,8 @@
+./0-nginx_likes_port_80: line 7: apt-get: command not found
+./0-nginx_likes_port_80: line 8: apt-get: command not found
+grep: /etc/nginx/nginx.conf: No such file or directory
+Configuring Nginx to listen on port 80
+sed: can't read /etc/nginx/nginx.conf: No such file or directory
+./0-nginx_likes_port_80: line 18: systemctl: command not found
+./0-nginx_likes_port_80: line 21: pidof: command not found
+Nginx is not running or failed to start

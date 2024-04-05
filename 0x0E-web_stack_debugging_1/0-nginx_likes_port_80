@@ -2,5 +2,28 @@
 #patching up the nginx to listen on port 80
 # delete the /etc/nginx/sites-enabled/default and create a symlink
 
+
+# Install necessary tools
+apt-get update
+apt-get install -y nginx net-tools iproute2
+
+# Step 1: Check Nginx configuration file
+nginx_config="/etc/nginx/nginx.conf"
+if ! grep -q "listen *80;" "$nginx_config"; then
+    echo "Configuring Nginx to listen on port 80"
+    sed -i 's/listen *\(.*\);/listen 80;/g' "$nginx_config"
+fi
+
+# Step 2: Restart Nginx
+systemctl restart nginx
+
+# Step 3: Check if Nginx is listening on port 80
+nginx_pid=$(pidof nginx)
+if [ -n "$nginx_pid" ]; then
+    echo "Nginx is running and listening on port 80"
+else
+    echo "Nginx is not running or failed to start"
+    exit 1
+fi
 sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 sudo service nginx start
