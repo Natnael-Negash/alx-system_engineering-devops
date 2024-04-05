@@ -1,3 +1,9 @@
-rm: cannot remove '/etc/nginx/sites-enabled/default': No such file or directory
-ln: failed to create symbolic link '/etc/nginx/sites-enabled/default': No such file or directory
-./0-nginx_likes_port_80: line 11: service: command not found
+grep: /etc/nginx/sites-enabled/default: No such file or directory
+Error: 'listen 80 default_server;' is missing or misconfigured in /etc/nginx/sites-enabled/default
+Updating the configuration to bind port 80 to all IPv4 addresses...
+awk: fatal: cannot open file `/etc/nginx/sites-enabled/default' for reading (No such file or directory)
+./0-nginx_likes_port_80: line 12: sudo: command not found
+Error: Nginx is not run with sudo privileges
+Restarting Nginx with sudo privileges...
+./0-nginx_likes_port_80: line 24: sudo: command not found
+./0-nginx_likes_port_80: line 28: sudo: command not found
