@@ -128,7 +128,7 @@
             "username": "Antonette"
         },
         {
-            "tasOOAk": "aliquam aut quasi",
+            "task": "aliquam aut quasi",
             "completed": true,
             "username": "Antonette"
         },
@@ -149,7 +149,7 @@
         },
         {
             "task": "nemo perspiciatis repellat ut dolor libero commodi blanditiis omnis",
-            "AOAcompleted": true,
+            "completed": true,
             "username": "Antonette"
         },
         {
@@ -253,7 +253,7 @@
             "task": "cupiditate necessitatibus ullam aut quis dolor voluptate",
             "completed": true,
             "username": "Samantha"
-        },OOA
+        },
         {
             "task": "distinctio exercitationem ab doloribus",
             "completed": false,
@@ -380,7 +380,6 @@
             "task": "occaecati adipisci est possimus totam",
             "completed": false,
             "username": "Karianne"
-	    O
         },
         {
             "task": "sequi dolorem sed",
@@ -628,7 +627,7 @@
             "completed": false,
             "username": "Elwyn.Skiles"
         },
-       AOA {
+        {
             "task": "qui consectetur id",
             "completed": false,
             "username": "Elwyn.Skiles"
@@ -836,12 +835,12 @@
             "task": "reprehenderit quos aut aut consequatur est sed",
             "completed": false,
             "username": "Delphine"
-    OOA    },
+        },
         {
             "task": "fugiat perferendis sed aut quidem",
             "completed": false,
             "username": "Delphine"
- OOA       },
+        },
         {
             "task": "quos quo possimus suscipit minima ut",
             "completed": false,
