@@ -19,7 +19,7 @@ def number_of_subscribers(subreddit):
         int: The number of subscribers if the subreddit is valid, 0 otherwise.
     """
     # Construct the URL for the subreddit's about page
-    url = f'http://www.reddit.com/r/{subreddit}/about.json'
+    url = 'http://www.reddit.com/r/{subreddit}/about.json'
 
     # Set a custom User-Agent header to avoid rate limiting
     headers = {'User-Agent': 'My User Agent 1.0'}
